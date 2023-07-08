@@ -2,6 +2,7 @@ let bar = document.querySelector('.fa-bars');
 
 bar.onclick = () =>{
     bar.classList.toggle('fa-times');
+    
 }
 
 const txts = document.querySelector(".content").children,
@@ -299,10 +300,6 @@ toggleBtn.onclick = (e) =>{
         disableDarkMode();
     }
 }
-
-
-console.log('%cTHIS WEBSITE IS MADE RESPONSIVE BY IAMKUNAL9', 'color: blue;');
-console.log('https://iamkunal9.github.io/links ');
 
 
 var popupCount = 0;
