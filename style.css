@@ -75,6 +75,8 @@ body{
 /* navbar section starts here */
 
 .navi{
+    position: fixed;
+    overflow: hidden;
     width: 100%;
     height: 70px;
     background: var(--bglight);
@@ -84,7 +86,8 @@ body{
     padding: 0 40px;
     margin: 0 auto;
     border-bottom: 2px solid;
-    
+    z-index: 100000;
+
 }
 
 
@@ -325,7 +328,7 @@ nav ul li a:hover {
 }
 
 .bgbox{
-    margin:2.5rem;
+    margin:5.5rem 2.5rem 2.5rem 2.5rem;
     align-items: center;
     background-color: var(--bgPannel);
     width: auto;
@@ -458,13 +461,13 @@ nav ul li a:hover {
     font-size: 1.7rem;
     align-items: center;
     text-align: center;
-
+    padding: 3px;
     height: 50px;
     color: var(--redm);
-     
+    padding: .5rem;
     cursor: pointer;
     transition: all 0.3s ease;
-   
+    font-weight: bold;
     display: inline-block;
     outline: none;
     border-radius: 9px;
@@ -749,7 +752,6 @@ nav ul li a:hover {
 
 .slide-course2 .info{
     position: absolute;
-    
     border-radius: 17px;
     background-color: rgba(130, 0, 0, 0.85);
     box-shadow: 0 5px 15px var(--redm);
@@ -1520,14 +1522,16 @@ ul{
   
   
 
-/* Responsive by IAMKUNAL9*/
 
 @media only screen and (max-width: 600px) {
     .info h3{
         font-size: 1.2rem !important;
     }
+    .home .row .image img{
+        margin-bottom: -2.5rem;
+    }
     h3{
-        font-size: 2rem !important;
+        font-size: 1.2rem !important;
     }
     .location .row{
         text-align: center;
@@ -1537,6 +1541,22 @@ ul{
     }
     .about .row .content{
         margin:2rem;
+    }
+    .about .row .content p{
+        margin-top: .8rem;
+        font-size: .8rem;
+    }
+    .course .row .content p{
+        margin-top: .8rem;
+        font-size: .8rem;
+    }
+    .course2 .row .content p{
+        margin-top: .8rem;
+        font-size: .8rem;
+    }
+    .course3 .row .content p{
+        margin-top: .8rem;
+        font-size: .8rem;
     }
     .popup-container {
         position: fixed;
@@ -1554,6 +1574,7 @@ ul{
       }
       .bgbox .image{
         display: flex;
+        align-items: center;
         justify-content: center;
       }
       .course-slider3{
@@ -1586,8 +1607,12 @@ ul{
         margin-right: 0;
         flex: 1 1 1rem;
       }
+      .location-ggl{
+        height: 20rem;
+      }
       .location-ggl iframe{
-        width: 10rem;
+        width: 18rem;
+        height: 20rem;
       }
       .location-bgbox .image{
         display: none;
@@ -1608,10 +1633,67 @@ ul{
       .user{
         display: grid;
       }
+      .score .row .board{
+        margin-top: -2rem;
+      }
       .bgbox{
-        margin: 1rem;
+        margin: 5rem 1rem 4rem 1rem;
         display: grid;
         justify-content: center;
+      }
+      .about-bgbox{
+        margin: -2rem 1rem 1rem 1rem;
+        display: grid;
+        justify-content: center;
+      }
+      .course-bgbox{
+        padding: 1rem;
+        margin: 2rem 1rem 1rem 1rem;
+        display: grid;
+        justify-content: center;
+      }
+      .review-bgbox{
+        padding: 1rem;
+        margin: 2rem 1rem 1rem 1rem;
+        justify-content: center;
+      }
+      .teachers-bgbox{
+        padding: 1rem;
+        margin: 2rem 1rem 1rem 1rem;
+        justify-content: center;
+      }
+      .staff-bgbox{
+        padding: 1rem;
+        margin: 2rem 1rem 1rem 1rem;
+        justify-content: center;
+      }
+      .contact-bgbox{
+        padding: 1rem;
+        margin: 2rem 1rem 1rem 1rem;
+        display: grid;
+        justify-content: center;
+      }
+      .location-bgbox{
+        margin: 2rem 1rem 1rem 1rem;
+        display: grid;
+        justify-content: center;
+      }
+      .gallery-bgbox{
+        padding: 1rem;
+        margin: 2rem 1rem 1rem 1rem;
+        justify-content: center;
+      }
+      .teacher .slide img{
+        padding: 0.5rem;
+        height: 20rem;
+      }
+      .staff .slide-staff img{
+        padding: 0.5rem;
+        height: 22rem;
+      }
+      .gallery-bgbox .slide img{
+        padding: 0.5rem;
+        height: 20rem;
       }
       .home .row .content{
         margin-right: 1rem;
@@ -1620,7 +1702,7 @@ ul{
         padding:2rem 1rem 2rem 1rem;
       }
       .heading{
-        font-size: 2rem;
+        font-size: 1.2rem;
       }
       .contact .row form span {
         font-size: 0.7rem;
@@ -1632,9 +1714,16 @@ ul{
         height:1rem;
         width:1rem;
       }
+      .contact .row form .box{
+        margin-top: 0rem;
+        margin-bottom: 0.5rem;
+        font-size: .7rem;
+        padding: 0.5rem;
+      }
       
       .reviews p{
-        font-size: 1rem !important;
+        text-align:center;
+        font-size: .8rem !important;
       }
       .reviews h3{
         font-size: 1.5rem !important;
@@ -1644,6 +1733,9 @@ ul{
       }
       .reviews-slider .user .fa-star{
         font-size: 0.8rem;
+      }
+      .reviews-slider .slide{
+        padding: 1rem;
       }
       .slide:hover .info{
         height: 40% !important;
@@ -1656,14 +1748,13 @@ ul{
         flex:1 1 1rem;
         margin-right: 0px;
       }
+      .copyright{
+        padding: 1rem;
+        font-size: .5rem;
+      }
     }
 
-
-/* Responsive by IAMKUNAL9*/
-
-
 /*                                 responsive section starts here                                   */
-
 @media(max-width: 767px){
   .footer-col{
     width: 50%;
@@ -1732,7 +1823,7 @@ ul{
     }
     
     nav {
-        position: absolute;
+        position:inherit;
         left: -300px;
         top: 0;
         z-index: 999;
@@ -1744,7 +1835,7 @@ ul{
         
         margin-bottom: -900px; 
         padding-bottom: 800px;
-
+        
         border-top-right-radius: 4px;
         border-bottom-right-radius: 4px;
 
