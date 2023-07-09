@@ -229,9 +229,9 @@ var swiper = new Swiper(".staff-slider", {
 });
 
 var swiper = new Swiper(".gallery-slider", {
-    slidesPerView: 1.5,
+    slidesPerView: 1,
     centeredSlides: true,
-    spaceBetween: 24,
+    spaceBetween: 25,
     lazyLoading: true,
     loop: true,
     pagination: {
@@ -257,15 +257,15 @@ ScrollReveal({
     delay: 400
 });
 
-ScrollReveal().reveal('.bgbox');
-ScrollReveal().reveal('.about-bgbox');
-ScrollReveal().reveal('.course-bgbox');
-ScrollReveal().reveal('.review-bgbox');
-ScrollReveal().reveal('.teachers-bgbox');
-ScrollReveal().reveal('.staff-bgbox');
-ScrollReveal().reveal('.contact-bgbox');
-ScrollReveal().reveal('.location-bgbox');
-ScrollReveal().reveal('.gallery-bgbox');
+// ScrollReveal().reveal('.bgbox');
+// ScrollReveal().reveal('.about-bgbox');
+// ScrollReveal().reveal('.course-bgbox');
+// ScrollReveal().reveal('.review-bgbox');
+// ScrollReveal().reveal('.teachers-bgbox');
+// ScrollReveal().reveal('.staff-bgbox');
+// ScrollReveal().reveal('.contact-bgbox');
+// ScrollReveal().reveal('.location-bgbox');
+// ScrollReveal().reveal('.gallery-bgbox');
 
 
 
@@ -302,37 +302,37 @@ toggleBtn.onclick = (e) =>{
 }
 
 
-var popupCount = 0;
-    var intervalId;
+// var popupCount = 0;
+//     var intervalId;
 
-    function createPopup() {
-      var popupContainer = document.getElementById("popup-container");
+//     function createPopup() {
+//       var popupContainer = document.getElementById("popup-container");
 
-      var popup = document.createElement("div");
-      popup.className = "popup";
-      popup.innerHTML = `
-        <i class="fa-solid fa-x" onclick="hidePopup(this.parentNode)"></i>
-        <h2>Popup Title</h2>
-        <p>This is the content of Popup ${popupCount + 1}.</p>
+//       var popup = document.createElement("div");
+//       popup.className = "popup";
+//       popup.innerHTML = `
+//         <i class="fa-solid fa-x" onclick="hidePopup(this.parentNode)"></i>
+//         <h2>Popup Title</h2>
+//         <p>This is the content of Popup ${popupCount + 1}.</p>
 
-      `;
+//       `;
 
-      popupContainer.appendChild(popup);
-      popup.classList.add("active");
+//       popupContainer.appendChild(popup);
+//       popup.classList.add("active");
 
-      popupCount++;
-    }
+//       popupCount++;
+//     }
 
-    function hidePopup(popup) {
-      popup.parentNode.removeChild(popup);
-    }
+//     function hidePopup(popup) {
+//       popup.parentNode.removeChild(popup);
+//     }
 
-    intervalId = setInterval(createPopup, 30000);
+//     intervalId = setInterval(createPopup, 30000);
 
 
-    document.getElementById('login-btn').onclick = function() {
-        window.location.href = "login.php";
-    }
-    document.getElementById('signup-btn').onclick = function() {
-        window.location.href = "login.php";
-    }
+//     document.getElementById('login-btn').onclick = function() {
+//         window.location.href = "login.php";
+//     }
+//     document.getElementById('signup-btn').onclick = function() {
+//         window.location.href = "login.php";
+//     }
