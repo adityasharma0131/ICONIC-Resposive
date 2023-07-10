@@ -576,8 +576,30 @@ nav ul li a:hover {
     font-size: 1.5rem;
 }
 
+#more {
+    display: none;}
+#myBtn{
+    color: var(--redm);
+    cursor:pointer;}
 
-            
+#more2 {
+        display: none;}
+#myBtn2{
+        color: var(--redm);
+        cursor:pointer;}
+#more3{
+    display: none;}
+#myBtn3{
+    color: var(--redm);
+    cursor:pointer;}
+
+    #more4{
+        display: none;}
+    #myBtn4{
+        color: var(--redm);
+        cursor:pointer;}
+        
+        
 .about .row .image{
     flex: 1 1 40rem;
 }
@@ -1137,11 +1159,8 @@ nav ul li a:hover {
 }
 
 .slide-staff:hover .info {
-    height: 70%;
+    height: 30%;
   }
-
-
-
 
 /* gallery section starts here */
 
@@ -1886,12 +1905,13 @@ ul{
         padding-right: 60px;
     }
     .mode{
-        display: inline;
+        display: inline-flex;
         padding-left: 60px;
         padding-right: 60px;
     }
     .fa-times{
         transform: rotate(180deg);
     }
+    
     
 }
