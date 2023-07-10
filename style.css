@@ -190,7 +190,7 @@ nav ul li a:hover {
     margin-top: .3rem;
     border-radius: 1rem;
     min-width: auto;
-    
+
     z-index: 1;
   }
 
@@ -1771,6 +1771,10 @@ ul{
         padding: 1rem;
         font-size: .5rem;
       }
+      
+    .dropdown-content {
+        position: relative;
+    }
     }
 
 /*                                 responsive section starts here                                   */
